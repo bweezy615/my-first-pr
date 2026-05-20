@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D1A" />
+      <stop offset="100%" style="stop-color:#1C1C3A" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E098" />
+      <stop offset="40%" style="stop-color:#D4A83A" />
+      <stop offset="100%" style="stop-color:#A8772A" />
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A8772A" />
+      <stop offset="60%" style="stop-color:#D4A83A" />
+      <stop offset="100%" style="stop-color:#F5E098" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background square (rounded corners for profile pic) -->
+  <rect width="400" height="400" rx="60" ry="60" fill="url(#bgGrad)" />
+
+  <!-- Outer gold ring border -->
+  <rect x="10" y="10" width="380" height="380" rx="52" ry="52"
+        fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.7" />
+
+  <!-- Inner subtle border -->
+  <rect x="18" y="18" width="364" height="364" rx="46" ry="46"
+        fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.25" />
+
+  <!-- Top decorative line -->
+  <line x1="80" y1="52" x2="320" y2="52" stroke="url(#goldGrad)" stroke-width="1" opacity="0.5" />
+
+  <!-- Corner diamond accents -->
+  <polygon points="40,40 50,45 40,50 30,45" fill="#D4A83A" opacity="0.6" />
+  <polygon points="360,40 370,45 360,50 350,45" fill="#D4A83A" opacity="0.6" />
+  <polygon points="40,360 50,355 40,350 30,355" fill="#D4A83A" opacity="0.6" />
+  <polygon points="360,360 370,355 360,350 350,355" fill="#D4A83A" opacity="0.6" />
+
+  <!-- Main monogram "B&T" centered, large -->
+  <text x="200" y="230"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="148"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="url(#goldGrad)"
+        filter="url(#glow)"
+        letter-spacing="-4">B&amp;T</text>
+
+  <!-- Horizontal rule above tagline -->
+  <line x1="60" y1="268" x2="340" y2="268" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6" />
+
+  <!-- ESSENTIALS below -->
+  <text x="200" y="308"
+        font-family="'Trebuchet MS', 'Arial Narrow', Arial, sans-serif"
+        font-size="30"
+        font-weight="400"
+        text-anchor="middle"
+        fill="#E8D498"
+        letter-spacing="10">ESSENTIALS</text>
+
+  <!-- Horizontal rule below -->
+  <line x1="60" y1="322" x2="340" y2="322" stroke="url(#goldGrad2)" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Tagline -->
+  <text x="200" y="355"
+        font-family="'Trebuchet MS', Arial, sans-serif"
+        font-size="13"
+        text-anchor="middle"
+        fill="#C9A84C"
+        letter-spacing="4"
+        opacity="0.85">QUALITY · VALUE · DELIVERED</text>
+
+  <!-- Bottom decorative line -->
+  <line x1="80" y1="370" x2="320" y2="370" stroke="url(#goldGrad2)" stroke-width="1" opacity="0.4" />
+
+  <!-- Small dot accents flanking the monogram -->
+  <circle cx="62" cy="200" r="3" fill="#D4A83A" opacity="0.5" />
+  <circle cx="338" cy="200" r="3" fill="#D4A83A" opacity="0.5" />
+  <circle cx="62" cy="212" r="2" fill="#D4A83A" opacity="0.3" />
+  <circle cx="338" cy="212" r="2" fill="#D4A83A" opacity="0.3" />
+</svg>
