@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160">
+  <defs>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6010;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C9A84C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7A540E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- White background -->
+  <rect x="0" y="0" width="480" height="160" rx="12" ry="12" fill="#FFFFFF" />
+
+  <!-- Border -->
+  <rect x="1" y="1" width="478" height="158" rx="11" ry="11" fill="none"
+        stroke="url(#goldGrad2)" stroke-width="2" />
+
+  <!-- Left accent bar -->
+  <rect x="20" y="30" width="4" height="100" rx="2" fill="url(#goldGrad2)" />
+
+  <!-- Monogram shield shape -->
+  <path d="M52,28 L88,28 L88,96 Q88,118 70,128 Q52,118 52,96 Z" fill="url(#goldGrad2)" />
+  <!-- B letter in shield -->
+  <text x="70" y="91" font-family="Georgia, serif" font-size="52" font-weight="bold"
+        text-anchor="middle" fill="#FFFFFF" letter-spacing="-2">B</text>
+
+  <!-- Company name: B&T -->
+  <text x="115" y="78" font-family="Georgia, serif" font-size="54" font-weight="bold"
+        fill="url(#goldGrad2)" letter-spacing="2">B&amp;T</text>
+
+  <!-- Thin divider line -->
+  <line x1="115" y1="92" x2="458" y2="92" stroke="#C9A84C" stroke-width="0.8" opacity="0.5" />
+
+  <!-- ESSENTIALS text -->
+  <text x="115" y="118" font-family="'Trebuchet MS', Arial, sans-serif" font-size="22"
+        font-weight="400" fill="#1A1A2E" letter-spacing="8">ESSENTIALS</text>
+
+  <!-- Tagline -->
+  <text x="115" y="140" font-family="'Trebuchet MS', Arial, sans-serif" font-size="10"
+        fill="#8B6010" letter-spacing="3" opacity="0.85">QUALITY · VALUE · DELIVERED</text>
+
+  <!-- Right decorative dots -->
+  <circle cx="446" cy="40" r="3" fill="#C9A84C" opacity="0.6" />
+  <circle cx="458" cy="40" r="3" fill="#C9A84C" opacity="0.4" />
+  <circle cx="446" cy="52" r="3" fill="#C9A84C" opacity="0.4" />
+  <circle cx="458" cy="52" r="3" fill="#C9A84C" opacity="0.2" />
+</svg>
